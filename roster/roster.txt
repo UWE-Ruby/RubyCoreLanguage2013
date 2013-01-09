@@ -1,0 +1,16 @@
+name, email
+Peter J	Bomars,pbomars@gmail.com
+Zachary M Bryan,zachx1@gmail.com
+Helen Canzler,hcanzl@hotmail.com
+Jerry Scott Frost,jsfrost@yahoo.com
+Kazunobu Hatakenaka,kaznoboo@gmail.com
+John M Higginson,jhigginson@gmail.com
+Payam J	Imani,jason@jasonimani.com
+Christopher J Lee,finges@gmail.com
+Travis Luong,travis56k@gmail.com
+Sukumar Ponram,suku8u@gmail.com
+Andrew M Reilly,areilly@kentfirerfa.org
+Neal Rodruck,neal.rodruck@symetra.com
+Nathan T Rohm,nathanrohm@gmail.com
+Theresa	Solak,theresa.solak@boeing.com
+Miroslav Spassov,miro1969@msn.com

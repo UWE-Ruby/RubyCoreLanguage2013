@@ -5,23 +5,16 @@ describe "The Rspec ruby gem" do
     # has keywords like #context, and #describe to help organize the specification (aka 'spec')
 
     it "creates 'examples' with the #it keyword" do
-      # the following test code passes, so this example passes
+      # the following test code defines an expectation, which is true, so this example passes
       1.should eq 1
     end
 
-    it "has easily readable methods like #should to test any object" do
+    it "adds #should to all objects!" do
       "Hello".should eq "Hello"
     end
 
-    it "has #should_not to test for negative cases" do
+    it "adds #should_not to all objects (to test for negative cases)" do
       1.should_not eq 2
-    end
-
-    it "creates readable predicate methods" do
-      # Integers have #zero? and #nil? predicate methods, so
-      # rspec automatically supports the #be_zero and #be_nil parameter to the #should_not method
-      1.should_not be_zero
-      1.should_not be_nil
     end
 
     it "alerts you when examples fail" do
@@ -30,13 +23,20 @@ describe "The Rspec ruby gem" do
       1.should eq 2
     end
 
+    it "creates a be_zero matcher when it finds a #zero? predicate method" do
+      # Integers have a #zero? predicate method, so
+      # rspec automatically supports the #be_zero parameter to the #should method
+      0.should be_zero
+    end
+
     it "supports placeholder examples that lack code (like this one)"
 
     it "requires that examples use expectations (like #should) to work properly" do
       # The following expression is false.
       # However, this example PASSES because no expectation was created.
       true == false
-      # In order to make the test fail, you would need to add the should method, like so:
+      #
+      # this code would cause the example to fail:
       # true.should == false
       #
       # Lesson: It's easy to write bad tests.

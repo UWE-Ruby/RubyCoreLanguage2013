@@ -31,7 +31,7 @@ describe "The Rspec ruby gem" do
 
     it "supports placeholder examples that lack code (like this one)"
 
-    it "requires that examples use expectations (like #should) to work properly" do
+    it "requires that examples use expectations, e.g. #should, or you get a false positive" do
       # The following expression is false.
       # However, this example PASSES because no expectation was created.
       true == false

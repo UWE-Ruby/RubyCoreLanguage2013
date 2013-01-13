@@ -15,7 +15,7 @@ The quiz will be posted in a few days, in Canvas
 
         # clone course repository into a subdirectory
         cd ruby_core
-        git clone git://github.com/UWE-Ruby/RubyCoreLanguage2013.git
+        git clone https://github.com/UWE-Ruby/RubyCoreLanguage2013.git
 
         # create week1homework folder
         mkdir week1homework

@@ -24,7 +24,7 @@ The quiz will be posted in a few days, in Canvas
         #    RubyCoreLanguage2013 - the repository for entire course
         #    week1homework - the repository you will make for week 1
 
-        # go to your github account and create a repository called wee1homework
+        # go to your github account and create a repository called week1homework
         # https://help.github.com/articles/creating-a-new-repository
 
         # initialize your local week1homework directory as a git repository

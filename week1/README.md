@@ -8,47 +8,73 @@ The quiz will be posted in a few days, in Canvas
 1. Fix the false positive spec
 1. Implement all other pending specs. You add `do..end` to the pending specs, as well as the supporting code to implement them
 
-Example:
+### Instructions
 
-        mkdir ruby_class
-        cd ruby_class
+        # create a place for course files
+        mkdir ruby_core
 
-        # get class repository and name the folder main_repo
-        git clone git://github.com/UWE-Ruby/RubyCoreLanguage2013.git main_repo
+        # clone course repository into a subdirectory
+        cd ruby_core
+        git clone git://github.com/UWE-Ruby/RubyCoreLanguage2013.git
 
-        # create week1 folder, NOT inside class repository
+        # create week1homework folder
         mkdir week1homework
-        cd week1homework
 
-        # initialize the directory as a git repository
+        # the 'ruby_core' folder now contains two sub-folders
+        #    RubyCoreLanguage2013 - the repository for entire course
+        #    week1homework - the repository you will make for week 1
+
+        # go to your github account and create a repository called wee1homework
+        # https://help.github.com/articles/creating-a-new-repository
+
+        # initialize your local week1homework directory as a git repository
+        cd week1homework
         git init
+
+        # configure your local repository to know about your remote github repository
+        # https://help.github.com/articles/adding-a-remote
+        # https://help.github.com/articles/which-remote-url-should-i-use
+        git remote add origin <yourgithuburlhere>
+
+        # might not be needed, but safe to do
+        git pull origin master
+
+        # copy the this week's homework to the current directory (ruby_core/week1homework)
+        cp -R ../RubyCoreLanguage2013/week1/homework/* .
+        # ruby_core/week1homework directory should now contain Gemfile file and spec folder
+
+        # add copied files to the index
         git add .
+
+        # commit the index to the repository
         git commit -m ‘added homework assignment’
 
-        # go to your github account and create a repository for wee1homework
-        git remote add origin <yourgithuburlhere>
+        # push the starting point up to github before making changes (suggested, not required)
         git push origin master
 
-        # if that fails do this first
-        git pull origin master
+        # time to get started!
 
         # install required gems
         bundle
 
         # run one spec file
         rspec --color --format documentation spec/00_rspec_spec.rb
-
         # run all spec files, with abbreviated parameters
         rspec -c -f d spec
-
         # default path includes spec folder
         rspec -c -f d
-
         # 'progress' format is the default when 'documentation' format is not specified
         rspec -c
-
         # or just
         rspec
+
+        # see Git Workflow discussion for details on next steps:
+        # 1) make changes
+        # 2) add files to index
+        # 3) commit changes
+        # 4) push changes to github
+        # 5) repeat!
+
 
 
 ## Reading

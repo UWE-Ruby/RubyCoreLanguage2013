@@ -47,7 +47,7 @@ class Contacts
   def contact index
   end
 
-  def format_contact hash
+  def format_contact contact
   end
 
   def all
@@ -67,4 +67,11 @@ class Contacts
 
   def delete_contact index
   end
+
+  def search string
+  end
+
+  def all_sorted_by field
+  end
+  
 end

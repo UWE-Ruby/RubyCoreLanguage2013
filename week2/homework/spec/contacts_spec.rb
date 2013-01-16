@@ -94,4 +94,22 @@ describe Contacts do
     actual.should eq expected
   end
 
+  it '#search returns exact matches' do
+    expected =  [
+                  {full_name: "Barack Obama", city: "Washington", state: "DC", email: "president@wh.gov"}
+                ]
+    actual = subject.search('Washington')
+    actual.should eq expected
+  end
+
+  it '#all_sorted_by(field) returns contacts sorted alphabetically by that field' do
+    expected =  [
+                  {full_name: "Barack Obama", city: "Washington", state: "DC", email: "president@wh.gov"},
+                  {full_name: "Brandon Faloona", city: "Seattle", state: "WA", email: "bfaloona@uw.edu"},
+                  {full_name: "Jason Shaw", city: "Seattle", state: "WA", email: "shawjaso@uw.edu"},
+                ]
+    actual = subject.search(:full_name)
+    actual.should eq expected
+  end
+
 end

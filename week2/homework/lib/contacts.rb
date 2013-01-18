@@ -10,8 +10,11 @@ class Contacts
   def initialize data
     @raw_entries = data.split("\n")
     @contacts = @raw_entries.collect do |line|
-      fields = line.split("|")
-      {full_name: fields[0], city: fields[1], state: fields[2], email: fields[3]}
+      field_values = line.split("|")
+      { full_name: field_values[0],
+        city: field_values[1],
+        state: field_values[2],
+        email: field_values[3]  }
     end
   end
 
@@ -39,12 +42,15 @@ class Contacts
   #########
 
   def num_entries
+    @raw_entries.length
   end
 
   def fields
+    [:full_name, :city, :state, :email]
   end
 
   def contact index
+    @contacts[index.to_i]
   end
 
   def format_contact contact

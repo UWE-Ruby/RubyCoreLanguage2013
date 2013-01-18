@@ -38,7 +38,10 @@ describe Contacts do
   end
 
   it '#contact(index) returns a hash for the contact at index' do
-    subject.contact(0).should eq full_name: "Brandon Faloona", city: "Seattle", state: "WA", email: "bfaloona@uw.edu"
+    subject.contact(0).should eq( { full_name: "Brandon Faloona",
+                                    city: "Seattle",
+                                    state: "WA",
+                                    email: "bfaloona@uw.edu" } )
   end
 
   it '#format_contact(contact) returns formatted string for the contact' do

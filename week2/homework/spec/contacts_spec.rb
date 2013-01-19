@@ -109,9 +109,9 @@ describe Contacts do
     expected =  [
                   {full_name: "Barack Obama", city: "Washington", state: "DC", email: "president@wh.gov"},
                   {full_name: "Brandon Faloona", city: "Seattle", state: "WA", email: "bfaloona@uw.edu"},
-                  {full_name: "Jason Shaw", city: "Seattle", state: "WA", email: "shawjaso@uw.edu"},
+                  {full_name: "Jason Shaw", city: "Seattle", state: "WA", email: "shawjaso@uw.edu"}
                 ]
-    actual = subject.search(:full_name)
+    actual = subject.all_sorted_by(:full_name)
     actual.should eq expected
   end
 

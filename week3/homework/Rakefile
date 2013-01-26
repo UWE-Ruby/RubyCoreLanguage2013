@@ -35,7 +35,7 @@ desc "List Files"
 task :list_files do
   puts 'Listing of Files:'
   puts only_files Dir['*']
-  puts system 'echo ... file list done ...'
+  system 'echo ... file list done ...'
 end
 
 # TODO #1

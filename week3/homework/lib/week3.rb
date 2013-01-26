@@ -1,3 +1,4 @@
+
 class Week3
 
   def initialize

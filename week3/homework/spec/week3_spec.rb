@@ -3,18 +3,19 @@ require 'week3'
 
 describe 'Variable type' do
 
-  # TODO: Figure out where in week3.rb to set these
+  # TODO: Figure out where to set these (but NOT inside each test)
 
   it 'Constant is visible here' do
     A_CONSTANT.should eq "I'm a CONSTANT"
   end
 
-  it 'Week3 class constant is visible here' do
-    Week3::A_CONSTANT.should eq "I'm a class CONSTANT"
-  end
-
   it 'Global is visible here' do
     $global_var.should eq "I'm a Global!"
+  end
+
+  # hint: you'll need to do this in week3.rb
+  it 'Week3 class constant is visible here' do
+    Week3::A_CONSTANT.should eq "I'm a class CONSTANT"
   end
 
 end
@@ -33,30 +34,32 @@ describe 'Week3 method' do
     subject.name.should eq expected
   end
 
-  it '#halve returns halved integer' do
-    input = 10
-    expected = 5
+  it '#halve returns first half of an array' do
+    input = [1,2,3,4]
+    expected = [1,2]
     actual = subject.halve input
     actual.should eq expected
   end
 
   it '#halve does not modify input parameter' do
-    input = 10
-    expected = 10
+    input = [1,2,3,4]
+    expected = [1,2,3,4]
     subject.halve input
     input.should eq expected
   end
 
-  it '#halve! returns halved integer' do
-    input = 10
-    expected = 5
-    actual = subject.halve! input
+  it '#halve! returns first half of an array' do
+    input = [1,2,3,4]
+    expected = [1,2]
+    actual = subject.halve input
     actual.should eq expected
   end
 
-  it '#halve! modifies the input parameter' do
-    input = 10
-    expected = 5
+  # optional because it is a bit tricky.
+  # take a look at Array#slice! and note that it deletes, rather than selects.
+  it '#halve! does modify input parameter' do
+    input = [1,2,3,4]
+    expected = [1,2]
     subject.halve! input
     input.should eq expected
   end

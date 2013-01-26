@@ -4,11 +4,12 @@ The quiz will posted in Canvas
 
 ## Code
 
-1. Look through these files for TODO notes. Read the comments carefully, it should contain all the instructions you need.
-    1. Rakefile
-    1. spec/blocks_spec.rb
-    1. spec/rspec_before_spec.rb
-    1. week3_spec.rb
+Look through these four files for TODO comments. Read every comment in the files, they should contain all the instructions you need.
+
+1. Rakefile
+1. spec/blocks\_spec.rb
+1. spec/rspec\_before_spec.rb
+1. spec/week3\_spec.rb
 
 
 ### Instructions

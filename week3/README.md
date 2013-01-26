@@ -6,9 +6,9 @@ The quiz will posted in Canvas
 
 Look through these three files for TODO comments. Read every comment in the files, they should contain all the instructions you need.
 
-1. Rakefile
-1. spec/blocks\_spec.rb
-1. spec/week3\_spec.rb
+1. homework/Rakefile
+1. homework/spec/blocks\_spec.rb
+1. homework/spec/week3\_spec.rb
 
 
 ### Instructions
@@ -66,16 +66,16 @@ Look through these three files for TODO comments. Read every comment in the file
 ### Required
 
 * The Ruby Programming Language
-    * TBD
+    * 4 Expressions and Operators
+    * 6.1 - 6.4 Methods
+    * 5.4 Blocks
 * Rake
     * [Using Rake to automate tasks](http://www.stuartellis.eu/articles/rake/)
 
 ### Suggested
-* TBD
+* Ruby for Newbies Screencast: [Iterators and Blocks](http://net.tutsplus.com/tutorials/ruby/ruby-for-newbies-iterators-and-blocks/)
 
-### Additional Reading
-* TBD
-
-### Lightning Talk ideas
-* Your (reasonably developed) project idea
+### Additional
+* [Programmer Competency Matrix](http://www.indiangeek.net/wp-content/uploads/Programmer%20competency%20matrix.htm)
+* Screencast: [The Enumerable Module or How I Fell in Love with Ruby](http://www.slideshare.net/harisamin/the-enumerable-module-or-how-i-fell-in-love-with-ruby)
 

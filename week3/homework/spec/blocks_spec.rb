@@ -16,7 +16,6 @@ describe 'Week3 block method' do
   # method is an iterator, like #each, that goes through each item
   #   in the array passed in.
   # block can be the second parameter, or implicit.
-  # you can use the #even? method you just wrote!
   it '#each_odd iterates an array and yields the odd values to the block'
 
 end

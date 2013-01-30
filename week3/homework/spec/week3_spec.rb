@@ -51,7 +51,7 @@ describe 'Week3 method' do
   it '#halve! returns first half of an array' do
     input = [1,2,3,4]
     expected = [1,2]
-    actual = subject.halve input
+    actual = subject.halve! input
     actual.should eq expected
   end
 

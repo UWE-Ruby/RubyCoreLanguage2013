@@ -4,7 +4,11 @@ The quiz will posted in Canvas
 
 ## Code
 
-1. Will be posted here
+1. Implement Employee in lib/employee.rb
+1. Write one useful test for Business in spec/business_spec.rb.
+1. Implement AutoShop in lib/auto_shop.rb.
+    1. Hint: You will need to call super and pass along parameters.
+
 
 ### Instructions
 

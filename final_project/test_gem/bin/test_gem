@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+puts "test_gem script executing"
+puts ARGV[0]

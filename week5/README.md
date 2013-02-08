@@ -21,7 +21,7 @@ The quiz will posted in Canvas
         cd ruby_core/RubyCoreLanguage2013
         git pull origin master
 
-        # create a local repository that is a copy of week5/homework
+        # create a local repository that is a copy of final_project/test_gem
         # complete the homework
         # create a github repository for week5 and push your code
         # submit the assignment by providing the url to the github repository
